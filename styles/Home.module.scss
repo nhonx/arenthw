@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+@import "~bulma/sass/utilities/mixins.sass";
+
+.main {
+  // padding-top: 60px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $light;
+  .header_chart {
+    .image {
+      background-image: url(/images/d01.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 316px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .graph {
+      padding: 30px;
+      background-color: $dark-600;
+      min-height: 316px;
+      svg {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  .categories {
+    max-width: 800px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

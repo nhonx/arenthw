@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.meal_list {
+  min-height: 600px;
+  .meals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    .meal_item {
+      display: block;
+      width: 234px;
+      height: 234px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      .name {
+        width: 120px;
+        height: 32px;
+        background-color: $primary-300;
+        padding: 7px 8px;
+        color: $light;
+        font-size: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .loadmore {
+    width: 100%;
+    padding: 30px;
+    .button {
+      display: block;
+      width: 296px;
+      height: 56px;
+      margin: 0 auto;
+      color: $light;
+      font-size: 18px;
+      padding: 14px;
+      text-align: center;
+      background: $gradient-300-400;
+    }
+  }
+}

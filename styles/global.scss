@@ -1,0 +1,94 @@
+@import "~bulma/bulma.sass";
+@import "./variables.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+.navbar {
+  background-color: $dark-500;
+  .navbar-item {
+    span {
+      margin: 10px;
+      color: $light;
+    }
+    &:hover {
+      span {
+        color: $dark-500;
+      }
+    }
+    &.active {
+      span {
+        color: $primary-500;
+      }
+    }
+  }
+}
+.footer {
+  display: block;
+  width: 100vw;
+  height: 128px;
+  background-color: $dark-500;
+  padding: 0;
+}
+
+.gauge-container {
+  display: inline-block;
+  position: relative;
+  width: 63%;
+
+  .gauge {
+    position: relative;
+    display: block;
+    transform: rotate(90deg);
+    circle {
+      stroke-width: 2;
+    }
+
+    .rail {
+      fill: transparent;
+      // stroke: $light;
+    }
+    .progress {
+      stroke: $light;
+    }
+    .progress {
+      fill: transparent;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.5s;
+      stroke-width: 2px;
+    }
+  }
+
+  .center {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    &.percentage {
+      font-size: 2vw;
+    }
+
+    &.icon {
+      font-size: 3vw;
+    }
+
+    .percentSymbol {
+      font-size: 0.8em;
+    }
+
+    .value {
+      font-size: 1.8em;
+    }
+  }
+}
