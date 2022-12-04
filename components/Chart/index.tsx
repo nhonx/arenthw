@@ -173,8 +173,8 @@ export const MyRecordChart = () => {
         <span>2021.05.21</span>
       </div>
       <svg
-        width="866"
-        height="214"
+        // width="866"
+        // height="214"
         viewBox="0 0 866 214"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

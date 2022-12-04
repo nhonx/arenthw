@@ -46,14 +46,15 @@ export const NavBar = (props: INavBarProps) => {
               <IconChallenge />
               <span>チャレンジ</span>
             </a>
-            <a
+            <Link
+              href="/health-news"
               className={cls("navbar-item", {
                 active: props.activeLink === "info",
               })}
             >
               <IconInfo />
               <span>お知らせ</span>
-            </a>
+            </Link>
             <a className="navbar-item">
               <IconMenu />
             </a>

@@ -18,15 +18,18 @@ export default function Home() {
     <div className={styles.container}>
       <NavBar />
       <div className={cls("main", styles.main)}>
-        <div className={cls("columns", styles.header_chart)}>
-          <div className={cls("column is-one-third", styles.image)}>
-            <ProgressRing amount={75} targetAmount={100} />
-          </div>
-          <div className={cls("column", styles.graph)}>
-            <OverallChart />
+        <div className={cls(styles.header_chart)}>
+          <div className={cls("columns", styles.columns)}>
+            <div className={cls("column is-one-third", styles.image)}>
+              <div className={styles.bg} />
+              <ProgressRing amount={75} targetAmount={100} />
+            </div>
+            <div className={cls("column", styles.graph)}>
+              <OverallChart />
+            </div>
           </div>
         </div>
-        <div className="container">
+        <div className={cls(styles.container)}>
           <div className={styles.categories}>
             <div className={cls(styles.item, styles.morning)}>
               <HexaMorningButton />

@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { MyRecordChart } from "../components/Chart";
 import { Footer } from "../components/Footer";
+import { MyDiary } from "../components/MyDiary";
+import { MyExercise } from "../components/MyExercise";
 import { NavBar } from "../components/NavBar";
 import cls from "../helper/classnames";
 import styles from "../styles/my-record.module.scss";
 export default function MyRecord() {
   return (
-    <div className={styles.container}>
+    <div>
       <NavBar activeLink="memo" />
       <div className={cls("main", styles.main)}>
         <div className={cls(styles.container)}>
@@ -58,6 +60,8 @@ export default function MyRecord() {
             </div>
           </div>
           <MyRecordChart />
+          <MyExercise />
+          <MyDiary />
         </div>
       </div>
       <Footer />

@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+.news_list {
+  min-height: 600px;
+  .news {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    .news_item {
+      width: 234px;
+      .news_item_thumb {
+        display: block;
+        width: 234px;
+        height: 144px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        .name {
+          width: 120px;
+          height: 32px;
+          background-color: $primary-300;
+          padding: 7px 8px;
+          color: $light;
+          font-size: 15px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .news_title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+        color: $dark-500;
+        letter-spacing: 0.075px;
+      }
+      .hashtags {
+        a {
+          color: $primary-400 !important;
+          margin-right: 10px;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 22px;
+          letter-spacing: 0.06px;
+        }
+      }
+    }
+  }
+  .loadmore {
+    width: 100%;
+    padding: 30px;
+  }
+}

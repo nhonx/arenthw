@@ -1,0 +1,64 @@
+@import "../styles/variables.scss";
+@import "~bulma/sass/utilities/mixins.sass";
+
+.main {
+  // padding-top: 60px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $light;
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    .categories {
+      padding: 56px 0;
+      margin: 0 auto;
+      .columns {
+        flex-wrap: wrap;
+      }
+      .cat {
+        width: 216px;
+        height: 144px;
+        background: $dark-600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        .content {
+          position: relative;
+          h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            letter-spacing: 0.11px;
+            a {
+              color: $primary-300 !important;
+            }
+          }
+          .separator {
+            margin: 0px auto;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            width: 56px;
+            height: 0px;
+            // background: rgba(0, 0, 0, 0.0001);
+            border: 1px solid #ffffff;
+          }
+          p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+
+            text-align: center;
+
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
