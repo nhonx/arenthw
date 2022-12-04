@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.my_record_chart {
+  width: 100%;
+  min-height: 304px;
+  background-color: $dark-500;
+  margin-bottom: 56px;
+  .title {
+    width: 100%;
+    padding: 16px 24px;
+    color: #fff;
+    span {
+      margin-right: 20px;
+      font-size: 22px;
+      display: inline-block;
+      vertical-align: middle;
+      &:first-child {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.15px;
+      }
+    }
+  }
+  svg {
+    margin: 0 auto;
+    display: block;
+  }
+  .filter_range {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 24px;
+    .range_btn {
+      width: 56px;
+      height: 24px;
+      background: #ffffff;
+      border-radius: 11px;
+      color: $primary-300;
+      text-align: center;
+      &.active {
+        background: $primary-300;
+        color: #fff;
+      }
+    }
+  }
+}

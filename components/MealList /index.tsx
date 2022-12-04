@@ -1,4 +1,5 @@
 import { MEAL_LIST } from "../../data/mock";
+import cls from "../../helper/classnames";
 import styles from "./style.module.scss";
 export const MealList = () => {
   return (
@@ -19,7 +20,7 @@ export const MealList = () => {
         })}
       </div>
       <div className={styles.loadmore}>
-        <a className={styles.button}>記録をもっと見る</a>
+        <a className={cls("primary-button", styles.button)}>記録をもっと見る</a>
       </div>
     </div>
   );

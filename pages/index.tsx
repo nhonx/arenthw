@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { Chart } from "../components/Chart";
+import { OverallChart } from "../components/Chart";
 import { Footer } from "../components/Footer";
 import {
   HexaMorningButton,
@@ -23,7 +23,7 @@ export default function Home() {
             <ProgressRing amount={75} targetAmount={100} />
           </div>
           <div className={cls("column", styles.graph)}>
-            <Chart />
+            <OverallChart />
           </div>
         </div>
         <div className="container">

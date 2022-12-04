@@ -92,3 +92,15 @@ body {
     }
   }
 }
+
+.primary-button {
+  display: block;
+  width: 296px;
+  height: 56px;
+  margin: 0 auto;
+  color: $light;
+  font-size: 18px;
+  padding: 14px;
+  text-align: center;
+  background: $gradient-300-400;
+}

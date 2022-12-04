@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 45px;
+    a {
+      color: #fff !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 16px;
+
+      letter-spacing: 0.033px;
+      &:hover {
+        color: $primary-300 !important;
+      }
+    }
+  }
+}
